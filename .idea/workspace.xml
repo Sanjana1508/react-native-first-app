@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44b9a400-8fa8-4023-98cf-962b3628b074" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1wfY8TIzaDk4QTGm9Uvlpkz2Zjp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44b9a400-8fa8-4023-98cf-962b3628b074" name="Default Changelist" comment="" />
+      <created>1628850951289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628850951289</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="172" y="127" width="1648" height="853" key="AVDManager" timestamp="1628857536164">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="172" y="127" width="1648" height="853" key="AVDManager/72.27.1848.1053@72.27.1848.1053" timestamp="1628857536164" />
+    <state x="724" y="28" width="1022" height="737" key="SettingsEditor" timestamp="1628857553757">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="724" y="28" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1628857553757" />
+  </component>
+</project>

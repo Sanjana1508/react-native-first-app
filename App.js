@@ -1,21 +1,64 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import { StyleSheet, View, Button, FlatList } from "react-native";
+import TodoItem from "./components/TodoItem";
+import TodoInput from "./components/TodoInput";
 
 export default function App() {
+  const [todos, setTodos] = useState([]);
+
+  const [isAddMode, setIsAddMode] = useState(false);
+
+  const addTodoHandler = (todoText) => {
+    if (todoText.length === 0) {
+      return;
+    }
+    setTodos((currentTodos) => [
+      ...currentTodos,
+      { uid: Math.random().toString(), value: todoText },
+    ]);
+    setIsAddMode(!isAddMode);
+  };
+
+  const removeGoalHandler = (goalId) => {
+    setTodos((currentTodos) => {
+      return currentTodos.filter((goal) => goal.uid !== goalId);
+    });
+  };
+
+  const cancelAddTodoHandler = () => {
+    setIsAddMode(!isAddMode);
+  };
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.screen}>
+      <Button
+        title="Add New Todo"
+        testID="addTodo"
+        onPress={() => setIsAddMode(!isAddMode)}
+        accessibilityLabel="pressToAdd"
+      />
+      <TodoInput
+        visible={isAddMode}
+        onAddTodo={addTodoHandler}
+        onCancel={cancelAddTodoHandler}
+      />
+      <FlatList
+        keyExtractor={(item, index) => item.uid}
+        data={todos}
+        renderItem={(itemData) => (
+          <TodoItem
+            id={itemData.item.uid}
+            onDelete={removeGoalHandler}
+            todo={itemData.item.value}
+          />
+        )}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  screen: {
+    padding: 40,
   },
 });
