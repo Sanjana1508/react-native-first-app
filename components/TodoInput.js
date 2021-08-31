@@ -27,7 +27,11 @@ const TodoInput = (props) => {
             <Button title="CANCEL" color="red" onPress={props.onCancel} />
           </View>
           <View style={styles.button}>
-            <Button title="ADD" onPress={addTodoHandler} />
+            <Button
+              accessibilityHint="add"
+              title="ADD"
+              onPress={addTodoHandler}
+            />
           </View>
         </View>
       </View>
