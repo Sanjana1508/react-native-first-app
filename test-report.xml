@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/home/sanjp/React-Native/first-app/__tests__/todoItem.test.js">
+    <testCase name="todoItem tests press function test" duration="688"/>
+    <testCase name="todoItem tests should contain Text component" duration="10"/>
+    <testCase name="todoItem tests should have background color #ccc" duration="7"/>
+  </file>
+  <file path="/home/sanjp/React-Native/first-app/__tests__/todoInput.test.js">
+    <testCase name="test todo input todo state changes when entered" duration="864"/>
+    <testCase name="test todo input shoud be a modal component" duration="6"/>
+    <testCase name="test todo input should contain TextInput component" duration="6"/>
+    <testCase name="test todo input should contain two Button component" duration="3"/>
+    <testCase name="test todo input should have cancel button" duration="8"/>
+    <testCase name="test todo input should have button with label as add" duration="8"/>
+    <testCase name="test todo input should containButton components" duration="3"/>
+  </file>
+  <file path="/home/sanjp/React-Native/first-app/__tests__/addTodoButton.test.js">
+    <testCase name="test Todo button test" duration="896"/>
+    <testCase name="test Todo No of buttons test" duration="8"/>
+    <testCase name="test Todo test onpress" duration="5"/>
+    <testCase name="test Todo test with testId" duration="7"/>
+    <testCase name="test Todo test with accessibility label" duration="6"/>
+    <testCase name="test Todo test button title" duration="6"/>
+    <testCase name="test Todo test with snapshot" duration="9"/>
+    <testCase name="test Todo should render button title Add New Todo" duration="6"/>
+  </file>
+</testExecutions>

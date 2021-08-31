@@ -34,8 +34,8 @@ export default function App() {
       <Button
         title="Add New Todo"
         testID="addTodo"
-        onPress={() => setIsAddMode(!isAddMode)}
         accessibilityLabel="pressToAdd"
+        onPress={() => setIsAddMode(!isAddMode)}
       />
       <TodoInput
         visible={isAddMode}

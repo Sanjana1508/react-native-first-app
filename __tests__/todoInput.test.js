@@ -1,8 +1,7 @@
 import { render, fireEvent, cleanup } from "@testing-library/react-native";
 import React from "react";
-import Enzyme from "enzyme";
+import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-import { shallow } from "enzyme";
 import { Modal } from "react-native";
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -32,7 +31,7 @@ describe("test todo input", () => {
 
     const input = getByPlaceholderText("Todo");
 
-    fireEvent.changeText(input, ...(data = [text]));
+    fireEvent.changeText(input, text);
 
     expect(setState).toHaveBeenCalledTimes(1);
 
@@ -66,8 +65,8 @@ describe("test todo input", () => {
   });
 
   it("should have button with label as add", () => {
-    const { findByLabelText } = render(<TodoInput />);
-    const addBtn = findByLabelText("add");
+    const { findByHintText } = render(<TodoInput />);
+    const addBtn = findByHintText("add");
     expect(addBtn).not.toBeNull();
   });
   it("should containButton components", () => {
